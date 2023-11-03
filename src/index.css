@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;700&display=swap");
+
+:root {
+  --background-left: #f3f4f6;
+  --background-right: #ffffff;
+  --form-input: #f3f4f6;
+  --button-right: #374151;
+  --button-left: #bf125d;
+  --text-color: #4b5563;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+h3 {
+  font-size: 14px;
+}
+
+body {
+  font-family: "outfit";
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form {
+  background-color: var(--background-right);
+  height: 100vh;
+}
+.form-heading {
+  color: var(--text-color);
+}
+
+.payment {
+  background-color: var(--background-left);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle-container,
+.rectangle-container {
+  background-color: var(--background-right);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-container {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin-bottom: -50px;
+  z-index: 9999;
+
+  /* border: 2px solid black; */
+}
+
+.circle-text {
+  color: var(--button-left);
+  font-size: 3.3rem;
+  font-weight: 300;
+}
+
+.rectangle-container {
+  padding: 1.5rem;
+  width: 350px;
+  text-align: center;
+}
+.rectangle-container > p {
+  line-height: 40px;
+  margin: 0;
+}
+.first-para,
+.second-para {
+  font-size: 16px;
+}
+.rectangle-container .first-para {
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.rectangle-container .second-para {
+  font-weight: 400;
+}
+
+.rectangle-container .third-para {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 30px;
+  color: var(--button-right);
+}
+
+.text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 80px;
+  color: var(--text-color);
+}
+
+.amount-to-pay {
+  background-color: var(--button-left);
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--background-right);
+  padding: 10px;
+}
+
+.amount {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.price {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.copyright {
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 300;
+}
+
+span {
+  color: var(--button-left);
+  font-weight: 500;
+}
+/* /////////////////////////////////////form/////////////// */
+
+.container-form {
+  padding: 30px 110px;
+  text-align: center;
+}
+.form-heading {
+  font-size: 16px;
+  margin: 60px 0;
+}
+
+.form {
+  width: 100%;
+  height: 350px;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5;
+}
+
+.first-name,
+.last-name,
+.email,
+.number {
+  /* width: 4%; */
+  padding: 20px;
+}
+
+.email {
+  grid-column: 1 / span 2;
+}
+
+.btn {
+  grid-column: 1 / span 2;
+  padding: 20px;
+  border: 0;
+  border-radius: 8px;
+  background-color: var(--button-right);
+  color: var(--background-right);
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+input {
+  background-color: var(--form-input);
+  border: none;
+  border-radius: 8px;
+  font-family: unset;
+}
+.confirm {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.footer,
+.confirm {
+  color: var(--text-color);
+  font-size: 12px;
+}
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
